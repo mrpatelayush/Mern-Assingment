@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Ayush Patel</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f6fa;
+        }
+
+        /* Navbar */
+        nav {
+            background-color: #101f3b;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+        }
+
+        nav h2 {
+            font-size: 28px;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        button {
+            background-color: #ffb900;
+            border: none;
+            padding: 12px 22px;
+            border-radius: 9px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: #315bea;
+            color: white;
+            text-align: center;
+            padding: 95px 20px;
+        }
+
+        .hero h1 {
+            font-size: 38px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            margin-bottom: 25px;
+        }
+
+        /* Courses Section */
+        .courses {
+            display: flex;
+            justify-content: space-around;
+            gap: 20px;
+            padding: 30px;
+            background-color: white;
+        }
+
+        .course {
+            background-color: #eef1ff;
+            text-align: center;
+            padding: 25px;
+            border-radius: 15px;
+            flex: 1;
+        }
+
+        .course h2 {
+            font-size: 23px;
+            color: #101f3b;
+        }
+
+        .course p {
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 700px) {
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            .courses {
+                flex-direction: column;
+            }
+
+            .hero h1 {
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2> Ayush Patel</h2>
+
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Courses</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <button>Sign up</button>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Learn Web Development</h1>
+        <p>Start from zero. Build real projects.</p>
+        <button>Get started</button>
+    </section>
+
+    <!-- Courses Section -->
+    <section class="courses">
+
+        <div class="course">
+            <h2>HTML</h2>
+            <p>Build the structure</p>
+        </div>
+
+        <div class="course">
+            <h2>CSS</h2>
+            <p>Make it beautiful</p>
+        </div>
+
+        <div class="course">
+            <h2>JavaScript</h2>
+            <p>Make it smart</p>
+        </div>
+
+        <div class="course">
+            <h2>Git</h2>
+            <p>Save your work</p>
+        </div>
+
+    </section>
+
+</body>
+</html>

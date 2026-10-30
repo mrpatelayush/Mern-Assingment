@@ -1,0 +1,179 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Club</title>
+
+    <style>
+        body {
+            font-family: Georgia, serif;
+            background-color: #eef1ff;
+            margin: 0;
+            padding: 16px;
+            color: #111;
+        }
+
+        .container {
+            max-width: 1050px;
+            margin: auto;
+        }
+
+        header {
+            background-color: #3059e8;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+            border-radius: 16px;
+            margin-bottom: 25px;
+        }
+
+        header h1 {
+            font-size: 44px;
+            margin: 25px 0 20px;
+        }
+
+        header p {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 25px;
+            border-radius: 16px;
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            font-size: 32px;
+            margin-top: 10px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 24px;
+        }
+
+        th {
+            background-color: #3059e8;
+            color: white;
+            text-align: left;
+            padding: 17px 12px;
+        }
+
+        td {
+            padding: 18px 12px;
+            border-bottom: 2px solid #d8d8e5;
+        }
+
+        label {
+            display: inline-block;
+            width: 70px;
+            font-size: 22px;
+        }
+
+        input {
+            width: 280px;
+            padding: 12px;
+            font-size: 18px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #3059e8;
+            color: white;
+            border: none;
+            padding: 14px 28px;
+            border-radius: 10px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #2145c7;
+        }
+
+        @media (max-width: 600px) {
+            table {
+                font-size: 16px;
+            }
+
+            input {
+                max-width: 65%;
+            }
+
+            h2 {
+                font-size: 26px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+<div class="container">
+
+    <header>
+        <h1>Tech Club</h1>
+        <p>Learn. Code. Grow.</p>
+    </header>
+
+    <section>
+        <h2>Upcoming Events</h2>
+
+        <table>
+            <tr>
+                <th>Event</th>
+                <th>Date</th>
+                <th>Venue</th>
+            </tr>
+
+            <tr>
+                <td>HTML Workshop</td>
+                <td>28 Oct</td>
+                <td>Lab 1</td>
+            </tr>
+
+            <tr>
+                <td>Hackathon</td>
+                <td>29 Oct</td>
+                <td>Seminar Hall</td>
+            </tr>
+        </table>
+    </section>
+
+    <section>
+        <h2>Register</h2>
+
+        <form>
+            <label for="name">Name:</label>
+            <input
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Your name"
+                required
+            >
+            <br>
+
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="you@example.com"
+                required
+            >
+            <br>
+
+            <button type="submit">Register</button>
+        </form>
+    </section>
+
+</div>
+</body>
+</html>
+

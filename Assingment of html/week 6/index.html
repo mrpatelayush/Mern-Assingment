@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile Page</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eef2f8;
+        }
+
+        .container {
+            width: 90%;
+            min-height: 100vh;
+            margin: auto;
+            background-color: #eef2f8;
+            border: 3px solid #dce3ec;
+            position: relative;
+            padding-bottom: 30px;
+        }
+
+        header {
+            background-color: #14233f;
+            color: white;
+            text-align: center;
+            padding: 18px;
+            font-size: 20px;
+        }
+
+        .profile-card {
+            width: 360px;
+            min-height: 405px;
+            background-color: white;
+            border: 2px solid #3563f6;
+            border-radius: 20px;
+            margin: 30px auto;
+            padding: 25px;
+            text-align: center;
+        }
+
+        .profile-circle {
+            width: 115px;
+            height: 115px;
+            background-color: #315be8;
+            color: white;
+            border-radius: 50%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 45px;
+        }
+
+        h1 {
+            font-size: 28px;
+            margin: 25px 0;
+        }
+
+        .designation {
+            font-size: 20px;
+            margin-bottom: 20px;
+        }
+
+        .description {
+            border: 1px solid #c9c9d8;
+            padding: 10px;
+            text-align: left;
+            font-size: 18px;
+            height: 103px;
+            overflow: hidden;
+        }
+
+        .add-button {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            width: 67px;
+            height: 67px;
+            background-color: #ffb900;
+            border-radius: 50%;
+            border: none;
+            font-size: 32px;
+            cursor: pointer;
+        }
+
+        @media (max-width: 450px) {
+            .profile-card {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header>
+            My Profile Page
+        </header>
+
+        <div class="profile-card">
+
+            <div class="profile-circle">
+                AP
+            </div>
+
+            <h1> Ayush Patel </h1>
+
+            <p class="designation">
+                Web Developer in Making
+            </p>
+
+            <div class="description">
+                Hi! I am Ayush. I started coding this year.
+                I like making small websites, drawing and
+                listening to music. My goal is to build my
+                own app. This year I am learning HTML, CSS
+                and JavaScript.
+            </div>
+
+        </div>
+
+        <button class="add-button">+</button>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register using the form to share your contact details, interests, and message.">
+    <meta name="keywords" content="registration form, contact form">
+    <meta name="theme-color" content="#2563eb">
+    <title>Registration Form</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+</head>
+<body>
+    <form>
+        <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+        </div>
+        <div>
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date">
+        </div>
+        <div>
+            <label for="phone">Phone:</label>
+            <input type="tel" id="phone" name="phone">
+        </div>
+        <fieldset>
+            <legend>Preferred contact method:</legend>
+            <div>
+                <input type="radio" id="contact-email" name="contact-method" value="email">
+                <label for="contact-email">Email</label>
+            </div>
+            <div>
+                <input type="radio" id="contact-phone" name="contact-method" value="phone">
+                <label for="contact-phone">Phone</label>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Interests:</legend>
+            <div>
+                <input type="checkbox" id="interest-technology" name="interests" value="technology">
+                <label for="interest-technology">Technology</label>
+            </div>
+            <div>
+                <input type="checkbox" id="interest-sports" name="interests" value="sports">
+                <label for="interest-sports">Sports</label>
+            </div>
+            <div>
+                <input type="checkbox" id="interest-travel" name="interests" value="travel">
+                <label for="interest-travel">Travel</label>
+            </div>
+        </fieldset>
+        <div>
+            <label for="topic">Topic:</label>
+            <select id="topic" name="topic">
+                <option value="">Select a topic</option>
+                <option value="general">General inquiry</option>
+                <option value="support">Support</option>
+                <option value="feedback">Feedback</option>
+            </select>
+        </div>
+        <div>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5"></textarea>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <h2> College Events</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Event </th>
+                <th>Date</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Sports Day</td>
+                <td>2026-10-27</td>
+                <td>Campus Ground</td>
+            </tr>
+            <tr>
+                <td>Music Concert</td>
+                <td>2026-10-28</td>
+                <td>Auditorium</td>
+            </tr>
+            <tr>
+                <td>Science Fair</td>
+                <td>2026-10-29</td>
+                <td>Lab Complex</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">Total Events: 3</th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
